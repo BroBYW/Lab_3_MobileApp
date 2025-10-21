@@ -25,7 +25,7 @@
 
             <Image
      Grid.Row="1"
-     Source="dog1.png"
+     Source="dog3.png"
      Aspect="AspectFit"
      HorizontalOptions="Fill"
      SemanticProperties.Description="dot net bot in a hovercraft number nine" />
@@ -67,7 +67,7 @@
                     <Label
                     Grid.Row="1"
                     Grid.Column="0"
-                    Text="Pug"
+                    Text="Golden Retriever"
                     TextColor="Black"
                     FontSize="16" />
 
@@ -118,8 +118,8 @@
             VerticalOptions="Center">
 
                         <Image
-                Source="profile_pic.png" 
-                Aspect="AspectFill"
+                Source="profile.jpg" 
+                Aspect= "AspectFill"
                 HeightRequest="80"
                 WidthRequest="80" />
                     </Border>
