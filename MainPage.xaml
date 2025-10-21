@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab2.MainPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <Grid
+            RowSpacing="25"
+            ColumnDefinitions="*">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label
+     Grid.Row="0"
+     Text="Alvin Chong BCS23020005"
+     Style="{StaticResource Headline}"
+     SemanticProperties.HeadingLevel="Level1" 
+                TextColor="Black"/>
+
+            <Image
+     Grid.Row="1"
+     Source="dog1.png"
+     Aspect="AspectFit"
+     HorizontalOptions="Fill"
+     SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+            <Border
+            Grid.Row="2"
+            StrokeShape="RoundRectangle 20"
+            Stroke="Transparent"
+            BackgroundColor="LightGoldenrodYellow"
+            StrokeThickness="2"
+                Padding="10,30"
+            Margin="20,-50,20,0">
+                <Grid 
+                RowDefinitions="Auto, Auto, Auto"
+                ColumnDefinitions="*, Auto"
+                RowSpacing="15"
+                ColumnSpacing="10">
+
+                    <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Robin Hood"
+                    TextColor="Black"
+                    FontSize="22"
+                    FontAttributes="Bold"
+                    SemanticProperties.HeadingLevel="Level2"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start" />
+
+                    <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="♂"
+                    TextColor="Black"
+                    FontSize="22"
+                    VerticalOptions="Center" 
+                        HorizontalOptions="End"/>
+
+                    <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Pug"
+                    TextColor="Black"
+                    FontSize="16" />
+
+                    <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="&#x1F551; 1 year old"
+                    TextColor="Black"
+                    FontSize="16" />
+
+                    <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="&#x1F4CD; 3B, Lorong 88, Taman Rantau Panjang, 96000 Sibu, Sarawak"
+                    TextColor="Black"
+                    FontSize="15"
+                    Margin="0,10,0,0" />
+
+                </Grid>
+            </Border>
+
+            <Border
+            Grid.Row="3"
+            Padding="10"
+                Margin="0,-120,0,0"
+            Stroke="Transparent"
+            StrokeThickness="1"
+            StrokeShape="RoundRectangle 10">
+
+                <Grid
+                ColumnDefinitions="Auto, *, Auto"
+                ColumnSpacing="15"
+                RowSpacing="10"
+                VerticalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Border
+            Grid.Row="0"
+            Grid.Column="0"
+            HeightRequest="80"
+            WidthRequest="80"
+            StrokeShape="RoundRectangle 80"
+            VerticalOptions="Center">
+
+                        <Image
+                Source="profile_pic.png" 
+                Aspect="AspectFill"
+                HeightRequest="80"
+                WidthRequest="80" />
+                    </Border>
+
+                    <VerticalStackLayout
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    Spacing="0">
+                        <Label
+                        Text="Jeon Jungkook"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        TextColor="Black" />
+                        <Label
+                        Text="Owner"
+                        FontSize="14"
+                        TextColor="Gray" />
+                    </VerticalStackLayout>
+
+                    <Label
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Text="1.11.2024"
+                    TextColor="Gray"
+                    FontSize="14"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End" />
+
+                    <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Text="Hi! Robin the Pug is simply a tiny tornado of fur, wrinkles, and endless charm!"
+                    TextColor="Gray"
+                    FontSize="15" />
+
+                </Grid>
+            </Border>
+
+            <Grid
+          Grid.Row="4"
+            ColumnDefinitions="Auto, *"
+            ColumnSpacing="15"
+            Margin="20,200,20,0"  VerticalOptions="Center">
+
+                <Button
+                Grid.Column="0"
+                x:Name="LikeBtn"
+                Text="♡"
+                FontSize="24"
+                HeightRequest="55"
+                WidthRequest="55"
+                CornerRadius="28" 
+                BackgroundColor="White"
+                TextColor="Black"
+                BorderColor="LightGray"
+                BorderWidth="1"
+                HorizontalOptions="Start"
+                Clicked="OnLikeClicked" />
+
+                <Button
+                Grid.Column="1"
+                x:Name="AdoptionBtn"
+                Text="Adoption"
+                FontSize="18"
+                FontAttributes="Bold"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                HeightRequest="55"
+                CornerRadius="28"
+                HorizontalOptions="Fill"
+                Clicked="OnAdoptionClicked" />
+            </Grid>
+            
+        </Grid>
+        
+    </ScrollView>
+
+</ContentPage>
