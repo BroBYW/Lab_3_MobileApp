@@ -167,32 +167,30 @@
             Margin="20,200,20,0"  VerticalOptions="Center">
 
                 <Button
-                Grid.Column="0"
-                x:Name="LikeBtn"
-                Text="♡"
-                FontSize="24"
-                HeightRequest="55"
-                WidthRequest="55"
-                CornerRadius="28" 
-                BackgroundColor="White"
-                TextColor="Black"
-                BorderColor="LightGray"
-                BorderWidth="1"
-                HorizontalOptions="Start"
-                Clicked="OnLikeClicked" />
+                    Grid.Column="0"
+                    Text="{Binding LikeButtonText}"
+                    FontSize="24"
+                    HeightRequest="55"
+                    WidthRequest="55"
+                    CornerRadius="28" 
+                    BackgroundColor="{Binding LikeButtonBackgroundColor}"
+                    TextColor="{Binding LikeButtonTextColor}"
+                    BorderColor="{Binding LikeButtonBorderColor}"
+                    BorderWidth="1"
+                    HorizontalOptions="Start"
+                    Command="{Binding LikeCommand}" />
 
                 <Button
-                Grid.Column="1"
-                x:Name="AdoptionBtn"
-                Text="Adoption"
-                FontSize="18"
-                FontAttributes="Bold"
-                BackgroundColor="Yellow"
-                TextColor="Black"
-                HeightRequest="55"
-                CornerRadius="28"
-                HorizontalOptions="Fill"
-                Clicked="OnAdoptionClicked" />
+                    Grid.Column="1"
+                    Text="Adoption"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    HeightRequest="55"
+                    CornerRadius="28"
+                    HorizontalOptions="Fill"
+                    Command="{Binding AdoptCommand}" />
             </Grid>
             
         </Grid>
